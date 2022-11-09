@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal web basuki</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f3a7a5168b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.gif" class="logo">
+                <ul id="sidemeu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <div class="fas">
+                        <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu('')"></i>
+                    </div>
+
+                </ul>
+                <div class="fas">
+                    <i class="fa-solid fa-bars" onclick="openmenu('')"></i>
+                </div>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Basuki</span><br>Raharjo Form Indonesia</h1>
+            </div>
+        </div>
+    </div>
+<!-----------about------------ -->    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/foto.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Basuki, I live in West Java, I'm 15 years old, I'm a student at SMK WIKRAMA BOGOR, my
+                        hobby is playing games.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------portfolio------------ -->    
+<div id="portfolio" >
+    <div class="container">
+        <h1 class="sub-title">My Works </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/comings.gif">
+                <div class="layer">
+                    <h3>coming soon</h3>
+                    <p>coming soon project/portofolio</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/comings.gif">
+                <div class="layer">
+                    <h3>coming soon</h3>
+                    <p>coming soon project/portofolio</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/comings.gif">
+                <div class="layer">
+                    <h3>coming soon</h3>
+                    <p>coming soon project/portofolio</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------contact------------ -->   
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i></i> raharjobasuki472@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 087773625263</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/muhammad.b.r.33/?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/muhamadbasukiraharjo/?hl=id" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://discord.gg/8EknAGT2" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://bit.ly/3RTYkWC" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemeu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+
+    
+</body>
+</html>
